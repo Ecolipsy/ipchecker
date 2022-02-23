@@ -1,0 +1,11 @@
+[Unit]
+Description=sussy private ip checker
+
+[Service]
+User=ecolipsy
+WorkingDirectory=/home/ecolipsy/ipchecker
+ExecStart=node index.js
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
